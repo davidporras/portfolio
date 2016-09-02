@@ -1,0 +1,9 @@
+
+RewriteEngine on
+
+AuthName "public_html"
+AuthUserFile "/home4/davidporras/.htpasswds/public_html/passwd"
+
+RewriteCond %{HTTP_HOST} ^davidporras.org$
+RewriteRule ^/?$ "http\:\/\/www\.davidporras\.com\.co\/" [R=301,L]
+

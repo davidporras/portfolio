@@ -1,0 +1,47 @@
+<!-- Seccion Portafolio Diseño Digital-->
+<div class="row" style="border-top: 2px solid #2FA2D4; background-color: #2FA2D4; color: #FFF;">
+    <div class="col-lg-12 text-center">
+        <h2 class="animated bounceInRight">Contáctame</h2>
+    </div>
+</div>
+<section id="contactame" style="background-color:#FFF;">
+    <div class="container">
+        <div class="col-md-12">
+            <div ng-show="isOk" class="alert alert-dismissible alert-success animated fadeInUp">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Gracias!</strong> Tu mensaje ha sido enviado correctamente, pronto me pondre en contacto contigo.
+            </div>
+            <div ng-show="notOk" class="alert alert-dismissible alert-danger animated fadeInUp">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>Ups!</strong> Tu mensaje no pudo ser enviado, intenta de nuevo.
+            </div>
+        </div>
+        <div class="col-md-6" style="border-right: 1px solid rgba(188, 188, 188, 0.39);">
+            <form name="contactame" id="contact">
+                <input ng-model="form.nombre" name="nombre" type="text" placeholder="Nombre" required="Porfavor ingrese su nombre" />
+                <input ng-model="form.email" name="email" type="email" placeholder="Email" required="Porfavor ingrese su email" />
+                <input ng-model="form.asunto" name="asunto" type="text" placeholder="Asunto" required="Porfavor ingrese un asunto" />
+                <textarea ng-model="form.mensaje" name="mensaje" placeholder="Mensaje" required="Porfavor ingrese un mensaje"></textarea>
+                <button ng-click="enviar()" class="btn btn-info btn-block">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Información de contacto</h3>
+                </div>
+                <div class="panel-body">
+                    <p class="contact-info" style="text-align:left;font-size:1.5em;color: grey;">
+                        <i class="fa fa-envelope"></i> info@davidporras.com.co
+                        <br>
+                        <i class="fa fa-phone" aria-hidden="true"></i> (+57) 3014069670
+                        <br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> Medellin - Colombia
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
